@@ -1,0 +1,17 @@
+{
+  "name": "website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build"
+  },
+  "dependencies": {
+    "pixi.js": "^6.5.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.6.2",
+    "querystring-es3": "^0.2.1"
+  }
+}
