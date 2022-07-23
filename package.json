@@ -1,16 +1,19 @@
 {
   "name": "website",
+  "homepage": "https://boorsoft.github.io/website",
   "version": "1.0.0",
-  "main": "index.js",
+  "source": "src/index.html",
   "license": "MIT",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build"
+    "build": "parcel build src/index.html",
+    "deploy": "yarn build && gh-pages -d dist"
   },
   "dependencies": {
     "pixi.js": "^6.5.0"
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "parcel": "^2.6.2",
     "querystring-es3": "^0.2.1"
   }
